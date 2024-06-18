@@ -1,10 +1,8 @@
 <div>
-    <div #wave></div>
-    <button (click)="playPause()">
-        @if (isPlaying()) {
-<span>Pause</span>
-} @else {
-Play
-}
-            </button>
+  <div #wave></div>
+  <button (click)="playPause()">
+    @if (isPlaying()) {
+    <span>Pause</span>
+    } @else { Play }
+  </button>
 </div>
