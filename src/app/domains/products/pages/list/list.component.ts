@@ -12,12 +12,16 @@ import { Category } from '@shared/models/category.model';
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CommonModule, ProductComponent, HeaderComponent, RouterLinkWithHref],
+  imports: [
+    CommonModule,
+    ProductComponent,
+    HeaderComponent,
+    RouterLinkWithHref,
+  ],
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  styleUrls: ['./list.component.css'],
 })
 export default class ListComponent {
-
   products = signal<Product[]>([]);
   categories = signal<Category[]>([]);
   private cartService = inject(CartService);
@@ -34,30 +38,24 @@ export default class ListComponent {
   }
 
   addToCart(product: Product) {
-    this.cartService.addToCart(product)
+    this.cartService.addToCart(product);
   }
 
   private getProducts() {
-    this.productService.getProducts(this.category_id)
-    .subscribe({
+    this.productService.getProducts(this.category_id).subscribe({
       next: (products) => {
         this.products.set(products);
       },
-      error: () => {
-        
-      }
-    })
+      error: () => {},
+    });
   }
 
   private getCategories() {
-    this.categoryService.getAll()
-    .subscribe({
+    this.categoryService.getAll().subscribe({
       next: (data) => {
         this.categories.set(data);
       },
-      error: () => {
-        
-      }
-    })
+      error: () => {},
+    });
   }
 }
