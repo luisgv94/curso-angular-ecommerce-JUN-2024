@@ -10,10 +10,10 @@ import { TimeAgoPipe } from '@shared/pipes/time-ago.pipe';
   standalone: true,
   imports: [CommonModule, ReversePipe, TimeAgoPipe, RouterLinkWithHref],
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product.component.css'],
 })
 export class ProductComponent {
-  @Input({required: true}) product!: Product;
+  @Input({ required: true }) product!: Product;
 
   @Output() addToCart = new EventEmitter();
 

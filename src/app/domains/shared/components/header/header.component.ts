@@ -9,7 +9,7 @@ import { RouterLinkWithHref, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLinkWithHref, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   hideSideMenu = signal(true);
@@ -18,6 +18,6 @@ export class HeaderComponent {
   total = this.cartService.total;
 
   toogleSideMenu() {
-    this.hideSideMenu.update(prevState => !prevState);
+    this.hideSideMenu.update((prevState) => !prevState);
   }
 }
