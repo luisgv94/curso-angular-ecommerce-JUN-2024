@@ -33,6 +33,12 @@ export default class ListComponent {
     this.getCategories();
   }
 
+  // Usando constructor injection
+  // constructor(private cartService: CartService) {}
+  // ngOnInit(): void {
+  //   this.cartService.someMethod();
+  // }
+
   ngOnChanges(changes: SimpleChanges) {
     this.getProducts();
   }

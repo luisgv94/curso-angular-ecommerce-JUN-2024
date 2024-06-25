@@ -1,8 +1,7 @@
-import { Component, Input, SimpleChanges, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Product } from '../../models/product.model';
+import { Component, inject, signal } from '@angular/core';
+import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
 import { CartService } from '../../services/cart.service';
-import { RouterLinkWithHref, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
