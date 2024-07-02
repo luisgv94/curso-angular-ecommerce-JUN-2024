@@ -19,14 +19,13 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ],
+    "lib": ["ES2022", "dom"],
     "paths": {
+      // ALIAS POR DOMINIOS
       "@shared/*": ["./src/app/domains/shared/*"],
       "@products/*": ["./src/app/domains/products/*"],
-      "@info/*": ["./src/app/domains/info/*"],
+      "@info/*": ["./src/app/domains/info/*"]
+      // "@/\*": \["./src/app/domains/\*"] // GENERA DE FORMA DINAMICA SEGUN TODOS LOS DOMINIOS
     }
   },
   "angularCompilerOptions": {
