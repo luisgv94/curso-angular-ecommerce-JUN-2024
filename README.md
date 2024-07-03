@@ -37,3 +37,5 @@ A mi me sirvió crear un archivo vercel.json en la raíz del proyecto con este c
 {   "rewrites": [      {"source": "/(.*)", "destination": "/"}   ] } -->
 
 VERCEL DEPLOYED APP: https://curso-angular-ecommerce-jun-2024.vercel.app/
+
+GIST: https://gist.github.com/nicobytes/ba2252b0b5ac2cbdafc40c0accd24862
