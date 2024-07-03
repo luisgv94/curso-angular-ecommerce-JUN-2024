@@ -2,16 +2,14 @@ import { Directive, ElementRef, inject } from '@angular/core';
 
 @Directive({
   selector: '[highlight]',
-  standalone: true
+  standalone: true,
 })
 export class HighlightDirective {
-
   element = inject(ElementRef);
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    this.element.nativeElement.style.backgroundColor = "red";
+    this.element.nativeElement.style.backgroundColor = 'red';
   }
-
 }
