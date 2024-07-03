@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<!-- 2024-01-16
+
+Si se encuentran con este error:
+
+404: NOT_FOUND Code: NOT_FOUND
+
+A mi me sirvió crear un archivo vercel.json en la raíz del proyecto con este contenido:
+
+{   "rewrites": [      {"source": "/(.*)", "destination": "/"}   ] } -->
+
+VERCEL DEPLOYED APP: https://curso-angular-ecommerce-jun-2024.vercel.app/
