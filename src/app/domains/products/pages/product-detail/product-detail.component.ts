@@ -9,10 +9,9 @@ import { CartService } from '@shared/services/cart.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.css'],
 })
 export default class ProductDetailComponent {
-
   @Input() id?: string;
   product = signal<Product | null>(null);
   cover = signal('');
@@ -21,17 +20,15 @@ export default class ProductDetailComponent {
 
   ngOnInit() {
     if (this.id) {
-      this.productService.getOne(this.id)
-      .subscribe({
+      this.productService.getOne(this.id).subscribe({
         next: (product) => {
           this.product.set(product);
           if (product.images.length > 0) {
-            this.cover.set(product.images[0])
+            this.cover.set(product.images[0]);
           }
-        }
-      })
+        },
+      });
     }
-    
   }
 
   changeCover(newImg: string) {
@@ -44,6 +41,4 @@ export default class ProductDetailComponent {
       this.cartService.addToCart(product);
     }
   }
-
-
 }
