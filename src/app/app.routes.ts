@@ -11,6 +11,7 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./domains/products/pages/list/list.component'),
+        // .then((module) => module.ListComponent), Pero se puede omitir ya que el componente tiene export default
       },
       {
         path: 'about',
