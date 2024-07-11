@@ -39,3 +39,8 @@ A mi me sirvió crear un archivo vercel.json en la raíz del proyecto con este c
 VERCEL DEPLOYED APP: https://curso-angular-ecommerce-jun-2024.vercel.app/
 
 GIST: https://gist.github.com/nicobytes/ba2252b0b5ac2cbdafc40c0accd24862
+
+<!-- GETTERS AND SETTERS -->
+<!-- Using Getters and Setters in Angular Components
+Getter: A getter allows you to define a method that acts like a property. When you access this property, the getter method is called automatically.
+Setter: A setter allows you to define a method that is called when you assign a value to the property. This can be useful for validating or transforming the data before storing it. -->
