@@ -44,3 +44,6 @@ GIST: https://gist.github.com/nicobytes/ba2252b0b5ac2cbdafc40c0accd24862
 <!-- Using Getters and Setters in Angular Components
 Getter: A getter allows you to define a method that acts like a property. When you access this property, the getter method is called automatically.
 Setter: A setter allows you to define a method that is called when you assign a value to the property. This can be useful for validating or transforming the data before storing it. -->
+
+<!-- Component Lifecycle -->
+<!-- https://angular.dev/guide/components/lifecycle -->
