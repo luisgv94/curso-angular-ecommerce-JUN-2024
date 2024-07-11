@@ -15,7 +15,7 @@ import { TimeAgoPipe } from '@shared/pipes/time-ago.pipe';
 export class ProductComponent {
   @Input({ required: true }) product!: Product;
 
-  @Output() addToCart = new EventEmitter();
+  @Output() addToCart = new EventEmitter<Product>();
 
   addToCartHandler() {
     this.addToCart.emit(this.product);
