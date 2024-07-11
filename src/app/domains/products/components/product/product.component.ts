@@ -20,4 +20,9 @@ export class ProductComponent {
   addToCartHandler() {
     this.addToCart.emit(this.product);
   }
+
+  // onNameChange = output<string>()    // OutputEmitterRef<string>
+  // setNewName(newName: string) {
+  //   this.onNameChange.emit(newName);
+  // }
 }
